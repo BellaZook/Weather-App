@@ -1,0 +1,11 @@
+.white-shadow {
+    text-shadow: 2px 2px 8px white;
+}
+
+.bg-white-05 {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.width-md {
+    max-width: 300px;
+}

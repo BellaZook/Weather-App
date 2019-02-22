@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  position: fixed;
+}
+
+
+.img-beach {
+  background-image: url("../images/beach.jpeg");
+  background-size: cover;
+}
+
+.middle {
+  justify-content: center;
+
+}
