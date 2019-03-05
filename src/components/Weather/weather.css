@@ -7,7 +7,11 @@
 }
 
 .width-md {
-    max-width: 300px;
+    max-width: 350px;
+}
+
+.min-width100 {
+    min-width: 100px;
 }
 
 .btn-group-temp {

@@ -44,7 +44,7 @@ class App extends Component {
 
     if (city && country) {
       // console.log(response.main.temp)
-      const convertedTemperature = tempConverter(response.main.temp, "K");
+      const convertedTemperature = tempConverter(response.main.temp, "F");
       this.setState({
         temperature: convertedTemperature,
         tempType: "F",
