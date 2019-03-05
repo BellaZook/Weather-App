@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Info = ({ children }) => {
+const Info = ({ children, className }) => {
     return (
-        <p className="bg-white-05 width-md">{children}</p>
+        <span className={`bg-white-05 width-md temp-info ${className}`}>{children}</span>
     );
 }
 

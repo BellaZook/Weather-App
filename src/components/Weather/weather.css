@@ -9,3 +9,29 @@
 .width-md {
     max-width: 300px;
 }
+
+.btn-group-temp {
+    display: flex;
+    flex-direction: column;
+}
+
+.temp-group {
+    display: flex;
+}
+
+.temp-info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.font-lg {
+    font-size: 2rem;
+}
+
+.font-md {
+    font-size: 1rem;
+
+}

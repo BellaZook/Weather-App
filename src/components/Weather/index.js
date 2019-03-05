@@ -7,11 +7,21 @@ const Weather = (props) => {
     return (
         <div>
             <h3 className="white-shadow">Weather Conditions</h3>
-            {props.country && props.city && <Info>Location: {props.city}, {props.country}</Info>}
-            {props.temperature && <Info>Temperature: {props.temperature}</Info>}
-            {props.humidity && <Info>Humidity: {props.humidity}</Info>}
-            {props.description && <Info>Conditions:  {props.description}</Info>}
-            {props.error && <Info>{props.error}</Info>}
+            {props.error && props.error}
+            <div className="temp-group font-lg">
+                <Info className="temp-info">
+                    {props.temperature} {props.tempType}
+                </Info>
+                <div className="btn-group-temp">
+                    <button onClick={() => { props.handleChangeTemp("F") }}>F</button>
+                    <button onClick={() => { props.handleChangeTemp("C") }}>C</button>
+                    <button onClick={() => { props.handleChangeTemp("K") }}>K</button>
+                </div>
+            </div>
+            <div className="font-md">
+                <Info>Humidity: {props.humidity && props.humidity + " %"}  </Info>
+                <Info>Conditions: <br />  {props.description}</Info>
+            </div>
         </div>
     );
 }
